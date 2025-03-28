@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Biologi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="materi.css">
+</head>
+<body>
+    <header class="bg-success text-white py-3 text-center position-relative">
+        <a href="landing.html" class="position-absolute top-50 start-0 translate-middle-y ms-3 text-white">
+            <i class="bi bi-arrow-left-circle display-5"></i>
+        </a>
+        <h2>Materi Biologi</h2>
+        <p>Konsep Biologi Interaktif</p>
+    </header>
+
+    <main class="container my-4">
+        <ul class="nav nav-pills justify-content-center mb-3" id="babNav">
+            <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#bab1">Bab 1: Sel</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#bab2">Bab 2: Jaringan</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#bab3">Bab 3: Sistem Organ</a></li>
+        </ul>
+        
+        <div class="tab-content">
+            <section id="bab1" class="tab-pane fade show active p-3 bg-white rounded shadow">
+                <h2>Bab 3: Sistem Organ</h2>
+                <p>
+                    Sistem organ adalah kumpulan organ yang bekerja sama untuk menjalankan fungsi tertentu dalam tubuh makhluk hidup.
+                    Setiap sistem organ memiliki peran spesifik yang sangat penting bagi kehidupan.
+                </p>
+
+                <h4>1. Sistem Pencernaan</h4>
+                <p>
+                    Sistem pencernaan berfungsi untuk memecah makanan menjadi zat gizi yang dapat diserap oleh tubuh.
+                    Organ utama dalam sistem ini meliputi mulut, kerongkongan, lambung, usus halus, dan usus besar.
+                </p>
+                <img src="./asset/_pencernaan.jpeg" alt="Sistem Pencernaan" class="img-fluid rounded">
+
+                <h4>2. Sistem Peredaran Darah</h4>
+                <p>
+                    Sistem peredaran darah bertugas mengangkut oksigen dan nutrisi ke seluruh tubuh serta membuang zat sisa metabolisme.
+                    Organ utama dalam sistem ini adalah jantung, arteri, vena, dan kapiler.
+                </p>
+                <img src="./asset/_peredaran_darah.jpg" alt="Sistem Peredaran Darah" class="img-fluid rounded">
+
+                <h4>3. Sistem Pernapasan</h4>
+                <p>
+                    Sistem pernapasan berfungsi untuk mengambil oksigen dan mengeluarkan karbon dioksida dari dalam tubuh.
+                    Organ utama dalam sistem ini mencakup hidung, trakea, bronkus, dan paru-paru.
+                </p>
+                <img src="./asset/_pernapasan.jpg" alt="Sistem Pernapasan" class="img-fluid rounded">
+
+                <h4>4. Sistem Ekskresi</h4>
+                <p>
+                    Sistem ekskresi berperan dalam membuang zat-zat sisa metabolisme yang tidak dibutuhkan tubuh.
+                    Organ utama dalam sistem ini adalah ginjal, hati, kulit, dan paru-paru.
+                </p>
+                <img src="/asset/_ekskresi.png" alt="Sistem Ekskresi" class="img-fluid rounded">
+                <div class="text-center mt-3">
+                    <button class="btn btn-primary" id="btnBab1">Mulai Simulasi</button>
+                </div>
+            </section>
+            
+            <section id="bab2" class="tab-pane fade p-3 bg-white rounded shadow" disabled>
+                <h3>Coming Soon</h3>
+                <p>Coming Soon</p>
+                <img src="images/jaringan.jpg" alt="Gambar" class="img-fluid rounded">
+                <div class="text-center mt-3">
+                    <button class="btn btn-primary" id="btnBab2" disabled>Mulai Simulasi</button>
+                </div>
+            </section>
+            
+            
+            <section id="bab3" class="tab-pane fade p-3 bg-white rounded shadow">
+                <h3>Coming Soon</h3>
+                <p>Coming Soon</p>
+                <img src="images/sistem_organ.jpg" alt="Gambar" class="img-fluid rounded">
+                <div class="text-center mt-3">
+                    <button class="btn btn-primary" id="btnBab3" disabled>Mulai Simulasi</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="simulasi.js"></script>
+</body>
+</html>

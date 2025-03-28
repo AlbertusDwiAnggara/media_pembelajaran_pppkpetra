@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Media Pembelajaran</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="welcome.html">i-Learning</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="welcome.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-success" id="btnKolaborator">Ingin menjadi kolaborator?</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="text-center py-5">
+        <h1>Welcome to Interactive Learning</h1>
+        <p>Belajar dengan cara yang lebih interaktif dan menyenangkan!</p>
+    </header>
+    
+    <main class="container text-center">
+        <h2 class="my-4">Pilih Mata Pelajaran</h2>
+        <section class="row my-4">
+            <div class="col-md-3 active-subject">
+                <img src="./asset/biology.png" alt="Biologi" class="img-fluid">
+                <h3>Biologi</h3>
+                <p>Pelajari materi Biologi interaktif.</p>
+                <a href="materi.html" class="btn btn-success">Pelajari</a>
+            </div>
+            <div class="col-md-3 inactive-subject">
+                <img src="./asset/mathematics.png" alt="Matematika" class="img-fluid">
+                <h3>Matematika</h3>
+                <p>Segera Hadir</p>
+                <button class="btn btn-secondary" disabled>Segera</button>
+            </div>
+            <div class="col-md-3 inactive-subject">
+                <img src="./asset/relativity.png" alt="Fisika" class="img-fluid">
+                <h3>Fisika</h3>
+                <p>Segera Hadir</p>
+                <button class="btn btn-secondary" disabled>Segera</button>
+            </div>
+            <div class="col-md-3 inactive-subject">
+                <img src="./asset/chemistry.png" alt="Kimia" class="img-fluid">
+                <h3>Kimia</h3>
+                <p>Segera Hadir</p>
+                <button class="btn btn-secondary" disabled>Segera</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy; 2025 Media Pembelajaran SMA. Semua Hak Dilindungi.</p>
+        <p>Email: kontak@sekolah.ac.id | Telepon: (021) 1234-5678</p>
+        <p>Alamat: Jl. Pendidikan No. 10, Jakarta</p>
+    </footer>
+
+    <!-- Pop-up Form Kolaborator -->
+    <div class="modal" id="kolaboratorModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Daftar sebagai Kolaborator</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Daftar menggunakan akun Google atau email Anda.</p>
+                    <button class="btn btn-danger w-100">Daftar dengan Google</button>
+                    <hr>
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Daftar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById("btnKolaborator").addEventListener("click", function() {
+            new bootstrap.Modal(document.getElementById("kolaboratorModal")).show();
+        });
+    </script>
+</body>
+</html>
